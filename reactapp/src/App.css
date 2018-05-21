@@ -1,0 +1,67 @@
+/* .App {
+  text-align: center;
+} */
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 120px;
+  float: left;
+}
+
+.App-header {
+  background-color: #222;
+  height: 120px;
+  padding: 20px;
+  color: white;
+}
+.createdByDiv {
+  float: right;
+  margin-top: 55px;
+  margin-right: 6%;
+}
+.createdby-title {
+  text-align: center;
+}
+
+.App-title {
+  font-size: 3em;
+  float: left;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+table, td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 3px;
+  margin: 1em auto;
+}
+
+.tableListDiv {
+  width: 45%;
+  text-align: center;
+  float: left;
+  padding: 3px;
+}
+.tableListtableDiv {
+  width: 100%;
+}
+.docsDiv {
+  float: left;
+  padding: 3px;
+  text-align: center;
+}
+.docsulList {
+  float: left;
+  margin-top: -5%;
+}
+.examplePara {
+  margin-left: -50%;
+}
