@@ -118,6 +118,10 @@ export default function chatReducer(state = initialState, action) {
             if (action.payload.entities.endchat[0].value === 'closechat') {
               st = { ...state, chatResponse: 'Good Bye' };
             }
+            if (action.payload.entities.endchat[0].value === 'you too') {
+              st = { ...state, chatResponse: "It's nice talking to you too" };
+            }
+            break;
           }
           case 'crud': {
             if (action.payload.entities.crud) {
@@ -150,6 +154,20 @@ export default function chatReducer(state = initialState, action) {
                 }
               }
             }
+            // if (action.payload.entities.crudques) {
+            //   let quesValue = '';
+            //   action.payload.entities.crudques.map(ques => {
+            //     quesValue = ques.value;
+            //   });
+            //   st = {
+            //     ...state,
+            //     chatResponse: `yes.. ${quesValue} what ?`,
+            //     crudquesValue: quesValue
+            //   };
+            // }
+            break;
+          }
+          case 'crudques': {
             if (action.payload.entities.crudques) {
               let quesValue = '';
               action.payload.entities.crudques.map(ques => {
@@ -161,6 +179,7 @@ export default function chatReducer(state = initialState, action) {
                 crudquesValue: quesValue
               };
             }
+            break;
           }
         }
       } else {
